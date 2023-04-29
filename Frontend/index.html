@@ -1,0 +1,102 @@
+<html lang='en'>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/style2.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/btn.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+</script>
+</head>
+
+<body>
+    <script src="static/script2.js"></script>
+    <section>
+        <div class="titleframe">T.H.I.R.D &nbsp;E.Y.E</div>
+    </section>
+
+    <div class="switch-container standby">
+        <button id="Off">OFF</button>
+        <button id="On">ON</button>
+    </div>
+    <div class="area">
+        <br>
+        
+        <br>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <div class="card">
+
+                        <h5 class="card-header h5 text-center">
+                            THIRD EYE IS ACTIVE
+                        </h5>
+                        <div class="card-body">
+
+
+                            <div class="booth">
+
+                                <!-- <video id="video" width="50%" 
+                                    height="100%">
+                                </video> -->
+
+                                <img src="{{ url_for('video_feed') }}" width="1050" height="450">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var start = function () {
+                var video = document.getElementById('video'),
+                    vendorUrl = window.URL || window.webkitURL;
+                if (navigator.mediaDevices.getUserMedia) {
+                    navigator.mediaDevices.getUserMedia({ video: true })
+                        .then(function (stream) {
+                            video.srcObject = stream;
+                        }).catch(function (error) {
+                            console.log("Something went wrong!");
+                        });
+                }
+            }
+            $(function () {
+                start();
+            });
+        </script>
+
+
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- <div class="toggle">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle"></label>
+    </div> -->
+
+
+    <script src="static/btn.js"></script>
+
+</body>
+</html>
