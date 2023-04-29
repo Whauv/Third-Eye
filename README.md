@@ -1,6 +1,6 @@
 # Third-Eye
 Suspicious activities are of a problem when it comes to the potential risk it brings to humans. With the increase in criminal activities in urban and suburban areas, it is necessary to detect them to be able to minimize such events. Early days surveillance was done manually by humans and were a tiring task as suspicious activities were uncommon compared to the usual activities. With the arrival of intelligent surveillance systems, various approaches were introduced in surveillance.</br>
-Thus,the basic idea is using the camera to detect suspicious activity inside a bounsing box.
+Thus,the basic idea is using the camera to detect suspicious activity inside a bounding box.
 
 # Teammates
 Pranav Chopdekar</br>
