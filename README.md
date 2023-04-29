@@ -8,7 +8,7 @@ Priyanshu Agarkar</br>
 Komal Chitnis</br>
 Sahil Gujar</br>
 
-# Link to download frozen inference graph.pb
+# Link to download frozen_inference_graph.pb
 https://github.com/methylDragon/opencv-python-reference/tree/master/Resources/Models/mask-rcnn-coco
 
 # Working 
